@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded",()=> {
+        let altura = parseInt(prompt("Altura: "));
+        for(let i=1;i<altura;i++){
+          let linha = document.createElement("div");
+    
+          let coluna ="";
+
+          for(let j=1; j<=i; j++){
+            coluna +="#";
+        }
+
+           
+            for(let j=1; j<=(altura-i); j++){
+            coluna += "_";
+        }
+        
+          for(let j=1; j<=i; j++){
+            coluna +="#";
+        }
+
+           
+            for(let j=1; j<=(altura-i); j++){
+            coluna += "_";
+        }
+        
+          
+          linha.textContent = coluna;
+          document.body.appendChild(linha);
+
+         
+        }
+         
+
+        
+            
+
+    })
+</script>
+<body>    
+</body>
+</html>
