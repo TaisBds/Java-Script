@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+ <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+        let contador = document.querySelector("#contador");
+        let numero=0;
+
+        function contar(){
+            numero++;
+            atualizarcontador();
+        } 
+
+        function atualizarcontador(){
+            contador.innerHTML = numero;
+        }
+        document.querySelector("#aumentar").onclick=()=>{
+            contar();
+        }
+   
+
+       
+
+    });
+</script>
+</head>
+
+<body>
+    <h1 id="contador">0</h1>
+    <button id="aumentar">+1</button>
+    
+</body>
+</html>
