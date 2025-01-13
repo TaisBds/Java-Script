@@ -1,0 +1,33 @@
+
+
+.botao{
+   display: grid;
+   margin: 20px auto;
+   padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(214, 23, 214);
+    background-color: rgb(139, 139, 233);
+    transition: 3s;
+    
+
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: rgb(9, 9, 112);
+    color: aliceblue;
+   
+}
+.content{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10px;
+
+}
+
+.Quadradinho{
+    background-color:  rgb(139, 139, 233);
+    width: 100px;
+    height: 100px;
+ 
+}
